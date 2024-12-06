@@ -1,0 +1,130 @@
+/* Main Custom CSS */
+
+/* Noto Sans Tagalog (nts-regular) */
+.nts-s {
+  font-family: "Noto Sans Tagalog", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem; /* Small size */
+  color: #222222;
+}
+
+.nts-m {
+  font-family: "Noto Sans Tagalog", sans-serif;
+  font-weight: 400;
+  font-size: 1rem; /* Medium size */
+  color: #222222;
+}
+
+.nts-l {
+  font-family: "Noto Sans Tagalog", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem; /* Large size */
+  color: #222222;
+}
+
+.nts-xl {
+  font-family: "Noto Sans Tagalog", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem; /* Extra Large size */
+  color: #222222;
+}
+
+.nts-xxl {
+  font-family: "Noto Sans Tagalog", sans-serif;
+  font-weight: 400;
+  font-size: 2rem; /* Extra Extra Large size */
+  color: #222222;
+}
+
+.nts-xxxl {
+  font-family: "Noto Sans Tagalog", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem; /* Extra Extra Extra Large size */
+  color: #222222;
+}
+
+/* Josefin Slab (js-regular) */
+.js-s {
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+  font-size: 0.75rem; /* Small size */
+  color: #222222;
+}
+
+.js-m {
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+  font-size: 1rem; /* Medium size */
+  color: #222222;
+}
+
+.js-l {
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+  font-size: 1.25rem; /* Large size */
+  color: #222222;
+}
+
+.js-xl {
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+  font-size: 1.5rem; /* Extra Large size */
+  color: #222222;
+}
+
+.js-xxl {
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+  font-size: 2rem; /* Extra Extra Large size */
+  color: #222222;
+}
+
+.js-xxxl {
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+  font-size: 2.5rem; /* Extra Extra Extra Large size */
+  color: #222222;
+}
+
+/* Patrick Hand (ph-regular) */
+.ph-s {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-size: 0.75rem; /* Small size */
+  color: #222222;
+}
+
+.ph-m {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-size: 1rem; /* Medium size */
+  color: #222222;
+}
+
+.ph-l {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-size: 1.25rem; /* Large size */
+  color: #222222;
+}
+
+.ph-xl {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-size: 1.5rem; /* Extra Large size */
+  color: #222222;
+}
+
+.ph-xxl {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-size: 2rem; /* Extra Extra Large size */
+  color: #222222;
+}
+
+.ph-xxxl {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-size: 2.5rem; /* Extra Extra Extra Large size */
+  color: #222222;
+}
