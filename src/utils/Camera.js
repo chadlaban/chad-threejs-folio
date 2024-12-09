@@ -52,6 +52,8 @@ class Camera {
     this.controls.minPolarAngle = Math.PI / 4;
     this.controls.minAzimuthAngle = Math.PI / 2;
     this.controls.maxAzimuthAngle = -Math.PI / 0.9999;
+
+    this.controls.maxDistance = 25; // maximum zoom distance
   }
 
   resize() {
