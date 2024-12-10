@@ -1,4 +1,8 @@
 /* Main Custom CSS */
+html,
+body {
+  overflow: hidden;
+}
 
 /* Noto Sans Tagalog (nts-regular) */
 .nts-s {
