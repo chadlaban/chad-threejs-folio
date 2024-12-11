@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "job_title": "Software Engineer",
+    "company": "株式会社 ゴールドバリュークリエーション (Golden Value Creation)",
+    "company_link": "https://gvc.co.jp/",
+    "responsibilities": "Coding, maintaining, and testing both client and admin interfaces for clients under the company, a project that I have been able to work with the most is the Okimeguri project (https://okimeguri.com/), this is a project that the Okinawa government (Tourism Department) is using to promote events that are currently being held within the Okinawa prefecture.",
+    "employment_duration": "Oct 2023 - Oct 2024 | 1 year 1 month"
+  },
+  {
+    "id": 2,
+    "job_title": "Front End Developer",
+    "company": "Capella BPO",
+    "company_link": "https://www.capellabpo.com/",
+    "responsibilities": "A day-to-day summary of what I've worked is that we have to research the best technologies to be implemented and would match their web applications requirements that they have. I was assigned to do research on what are the best frameworks to utilize based on the technical requirements and at the same time code the front-end and build test APIs to show the actual output of each of the web applications.",
+    "employment_duration": "Jun 2023 - Sep 2023 | 4 months"
+  },
+  {
+    "id": 3,
+    "job_title": "Software Developer",
+    "company": "Giant International Software Station Inc.",
+    "company_link": "https://www.linkedin.com/company/giant-international-software-station-inc",
+    "parent_company": "Encompass Technologies",
+    "parent_link": "https://www.encompasstech.com/",
+    "responsibilities": "A day-to-day summary of what I did in my software developer role is that we code any feature requests or customizations that a client wants, additionally we also handle any third-party integrations. Not only limited to those main responsibilities but we also have internal projects, onboarding technical trainings, and give assistance to support teams in case they need any developer that can assist them with the internal platform.",
+    "employment_duration": "Jun 2023 - Sep 2023 | 4 months"
+  },
+  {
+    "id": 4,
+    "job_title": "Software Analyst",
+    "company": "Giant International Software Station Inc.",
+    "company_link": "https://www.linkedin.com/company/giant-international-software-station-inc",
+    "parent_company": "Encompass Technologies",
+    "parent_link": "https://www.encompasstech.com/",
+    "responsibilities": "A day-to-day summary of my work here is that we assist any existing or potential customers on-call with regards to the company's products, we do our best to provide them with the best answers and also assist them in how to utilize the products that they are subscribed to. The calls may vary depending on the issue of the client so this may be a technical concern or non-technical concern.",
+    "employment_duration": "Dec 2020 - Jul 2021 | 8 months"
+  },
+  {
+    "id": 5,
+    "job_title": "Wordpress Developer (Internship)",
+    "company": "Adverva Media",
+    "company_link": "https://www.advervamedia.com/",
+    "responsibilities": "I was assigned with Content Management System using WordPress, I also had the responsibility to research on accurate data and information that will be presented on the website.",
+    "employment_duration": "Jun 2019 - Aug 2019 | 3 months"
+  }
+]

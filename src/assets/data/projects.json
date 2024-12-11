@@ -1,0 +1,88 @@
+[
+  {
+    "project_title": "Okimeguri",
+    "association": "株式会社 ゴールドバリュークリエーション (Golden Value Creation)",
+    "association_link": "https://gvc.co.jp/",
+    "description": "“Okimeguri” is a website created with the hope that you will enjoy a journey in Okinawa that can only be experienced there, more comfortably and deeply, and that you will leisurely and relaxingly tour various places within the limited time. The “Tourism Comfort Map” introduces comfortable spots and popular spots up to two months in advance. When you have free time or are unsure of your destination, please take a look at the “Tourism Guide Map,” “Story Map,” and “Event Information,” and you will surely discover a new side of Okinawa. We hope you will find it useful when planning your trip at home or during your trip when you have some free time. Additionally, the Okinawa tourism information website “Okinawa Monogatari” also shares various attractions of Okinawa, so please take a look at it as well.",
+    "tech_stack": [
+      "Vue.js",
+      "Nuxt.js",
+      "REST API",
+      "Node.js",
+      "Express.js",
+      "Sequelize ORM",
+      "AWS S3"
+    ],
+    "tools": ["Postman", "Docker", "Adobe XD", "RedMine", "ChatWork"]
+  },
+  {
+    "project_title": "Watch It",
+    "association": "Personal Project",
+    "association_link": "https://github.com/chadlaban/watch-it",
+    "description": "A website that provides details, reviews, and other information about films. Users can browse for specific movies and access important information.",
+    "tech_stack": ["HTML", "CSS", "React.js", "REST API"],
+    "tools": ["Figma", "Git"]
+  },
+  {
+    "project_title": "Little Lemon",
+    "association": "Coursera | Meta Front End Developer",
+    "association_link": "https://github.com/chadlaban/little-lemon-frontend",
+    "description": "A straightforward React.js project from a Meta course, showcasing essential knowledge and best practices for using React effectively.",
+    "tech_stack": ["HTML", "CSS", "React.js"],
+    "tools": ["Figma", "Git"]
+  },
+  {
+    "project_title": "LabelForce AI",
+    "association": "Capella BPO",
+    "association_link": "https://www.capellabpo.com/",
+    "description": "Labelforce AI provides comprehensive data labeling services, creating and managing custom annotation teams. They offer tailored solutions by recruiting the right talent from their global network, ensuring alignment with project goals. Labelforce AI handles all aspects of team management, allowing clients to focus on advancing their AI systems while ensuring data accuracy and efficiency, thus enhancing their competitive edge.",
+    "tech_stack": ["Vue.js", "Nuxt.js", "Node.js", "Express.js", "PostgreSQL"],
+    "tools": ["Postman", "Figma", "BaseCamp", "Git"]
+  },
+  {
+    "project_title": "AI SearchBox",
+    "association": "Capella BPO",
+    "association_link": "https://www.capellabpo.com/",
+    "description": "I collaborated with a UI/UX designer in the Philippines to create the front-end code for their Figma design. The project allows users to quickly search for AI tools based on their needs. Users can filter AI tools by keyword, category through a checkbox filter, and by selecting the pill category on each AI Tool card, which automatically filters the default output.",
+    "tech_stack": ["Vue.js", "Nuxt.js", "Node.js", "Express.js", "PostgreSQL"],
+    "tools": ["Postman", "Figma", "BaseCamp", "Git"]
+  },
+  {
+    "project_title": "Kape-An",
+    "association": "Personal Project",
+    "association_link": "https://github.com/chadlaban/kape-an-landing-page",
+    "description": "This coffee shop concept, inspired by the charm of Baguio City, PH, showcases the products available for sale. Users can explore a variety of offerings, from freshly brewed coffee to delectable pastries, all presented in an inviting and user-friendly interface and responsive throughout devices.",
+    "tech_stack": ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
+    "tools": ["Figma", "Adobe Photoshop", "Git"]
+  },
+  {
+    "project_title": "Asset Request Dashboard",
+    "parent_association": "Encompass Technologies",
+    "parent_link": "https://www.encompasstech.com/",
+    "association": "Giant International Software Station Inc.",
+    "association_link": "https://www.linkedin.com/company/giant-international-software-station-inc",
+    "description": "I created a dashboard for our inventory asset manager to track and receive asset requests from employees within the ERP system. The dashboard allows users to request up to 5 hardware assets and requires a valid reason for each request. It filters asset data to match specifics for our location and sends requests to the asset manager for approval. The dashboard includes multiple views based on user roles and maintains a history of all asset requests. It is responsive and can be used on smaller devices.",
+    "tech_stack": ["HTML", "CSS", "SASS", "JavaScript", "REST API"],
+    "tools": ["Postman", "WebHook", "Mocha", "Chai"]
+  },
+  {
+    "project_title": "Developer Knowledge Dashboard",
+    "parent_association": "Encompass Technologies",
+    "parent_link": "https://www.encompasstech.com/",
+    "association": "Giant International Software Station Inc.",
+    "association_link": "https://www.linkedin.com/company/giant-international-software-station-inc",
+    "description": "This knowledge dashboard is designed for internal developers, offering knowledge and code snippets for ongoing projects. It features topic categories divided into four columns, each with topic cards displaying a short description. Clicking on a card reveals a step-by-step process in an iFrame. The dashboard can be filtered by category or keywords.",
+    "tech_stack": ["HTML", "CSS", "SASS", "JavaScript", "REST API"],
+    "tools": ["Postman", "WebHook", "Mocha", "Chai"]
+  },
+  {
+    "project_title": "EDI KPI Dashboard",
+    "parent_association": "Encompass Technologies",
+    "parent_link": "https://www.encompasstech.com/",
+    "association": "Giant International Software Station Inc.",
+    "association_link": "https://www.linkedin.com/company/giant-international-software-station-inc",
+    "description": "I updated the KPI dashboard for our EDI team, collaborating with their team lead to determine the necessary statistics and desired layout. The dashboard allows employees to filter KPIs by month and year, and includes summary cards with task details. It is dynamic and responsive, automatically adjusting for new or inactive team members.",
+    "tech_stack": ["HTML", "CSS", "SASS", "JavaScript", "REST API"],
+    "tools": ["Postman", "WebHook", "Mocha", "Chai"]
+  }
+]
