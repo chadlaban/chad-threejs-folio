@@ -132,3 +132,8 @@ body {
   font-size: 3.5rem;
   color: #222222;
 }
+
+/* custom transitions */
+.transition-bg {
+  transition: background-color 1s ease-in-out;
+}
