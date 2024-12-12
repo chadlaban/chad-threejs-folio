@@ -4,134 +4,42 @@ body {
   overflow: hidden;
 }
 
-/* Noto Sans Tagalog (nts-regular) */
-.nts-s {
-  font-family: "Noto Sans Tagalog", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #222222;
+#page {
+  overflow: auto;
+  scroll-behavior: smooth;
 }
 
-.nts-m {
-  font-family: "Noto Sans Tagalog", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #222222;
+/* custom scroll bar end */
+#page::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
-.nts-l {
-  font-family: "Noto Sans Tagalog", sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  color: #222222;
+/* draggable part */
+#page::-webkit-scrollbar-thumb {
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  border: 1px solid #fafafa;
 }
 
-.nts-xl {
-  font-family: "Noto Sans Tagalog", sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  color: #222222;
+#page::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
 }
 
-.nts-xxl {
-  font-family: "Noto Sans Tagalog", sans-serif;
-  font-weight: 400;
-  font-size: 3rem;
-  color: #222222;
+#page::-webkit-scrollbar-thumb:hover {
+  background-color: #000;
 }
 
-.nts-xxxl {
-  font-family: "Noto Sans Tagalog", sans-serif;
-  font-weight: 400;
-  font-size: 3.5rem;
-  color: #222222;
+#page::-webkit-scrollbar-horizontal {
+  height: 10px;
 }
 
-/* Josefin Slab (js-regular) */
-.js-s {
-  font-family: "Josefin Slab", serif;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #222222;
+#page::-webkit-scrollbar-thumb {
+  background-color: #1d1d1d;
+  border-radius: 10px;
 }
-
-.js-m {
-  font-family: "Josefin Slab", serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #222222;
-}
-
-.js-l {
-  font-family: "Josefin Slab", serif;
-  font-weight: 600;
-  font-size: 2rem;
-  color: #222222;
-}
-
-.js-xl {
-  font-family: "Josefin Slab", serif;
-  font-weight: 600;
-  font-size: 2.5rem;
-  color: #222222;
-}
-
-.js-xxl {
-  font-family: "Josefin Slab", serif;
-  font-weight: 600;
-  font-size: 3rem;
-  color: #222222;
-}
-
-.js-xxxl {
-  font-family: "Josefin Slab", serif;
-  font-weight: 600;
-  font-size: 3.5rem;
-  color: #222222;
-}
-
-/* Patrick Hand (ph-regular) */
-.ph-s {
-  font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #222222;
-}
-
-.ph-m {
-  font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #222222;
-}
-
-.ph-l {
-  font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-size: 2rem;
-  color: #222222;
-}
-
-.ph-xl {
-  font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-size: 2.5rem;
-  color: #222222;
-}
-
-.ph-xxl {
-  font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-size: 3rem;
-  color: #222222;
-}
-
-.ph-xxxl {
-  font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-size: 3.5rem;
-  color: #222222;
-}
+/* custom scroll bar end */
 
 /* custom transitions */
 .transition-bg {
