@@ -1,20 +1,12 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
-import dragInstruction from "../../assets/videos/instructions/dragging.mp4";
-import zoomInstruction from "../../assets/videos/instructions/zoom.mp4";
-import clickInstruction from "../../assets/videos/instructions/click.mp4";
 
-const videoInstructions = [
-  { video: dragInstruction, title: "Drag" },
-  { video: zoomInstruction, title: "Zoom" },
-  { video: clickInstruction, title: "Click" },
-];
-
-const Guide = () => {
+const Guide = ({ videos }) => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const goToNextVideo = () => {
-    if (currentVideoIndex < videoInstructions.length - 1) {
+    if (currentVideoIndex < videos.length - 1) {
       setCurrentVideoIndex(currentVideoIndex + 1);
     }
   };
@@ -26,7 +18,7 @@ const Guide = () => {
   };
 
   return (
-    <div className="absolute m-2 p-1 top-1 right-1 bg-[#a3bf7c]/[.8] rounded-lg">
+    <div className="absolute mt-3 mr-3 p-1 top-0 right-0 bg-[#a3bf7c]/[.8] rounded-lg shadow-md">
       <div className="flex gap-2 items-center mt-6">
         <button
           onClick={goToPreviousVideo}
@@ -42,14 +34,15 @@ const Guide = () => {
             <video
               autoPlay
               loop
+              muted
               className="rounded-lg"
-              src={videoInstructions[currentVideoIndex].video}
+              src={videos[currentVideoIndex].video}
             />
           </div>
 
           <div className="text-center mb-2">
-            <h3 className="ph-m">
-              {videoInstructions[currentVideoIndex].title}
+            <h3 className="font-mt text-xl">
+              {videos[currentVideoIndex].title}
             </h3>
           </div>
         </div>
@@ -57,13 +50,17 @@ const Guide = () => {
         <button
           onClick={goToNextVideo}
           className="p-1 rounded-full bg-[#fafafa] text-[#a3bf7c]"
-          disabled={currentVideoIndex === videoInstructions.length - 1}
+          disabled={currentVideoIndex === videos.length - 1}
         >
           <ChevronRightIcon className="h-6 w-6" />
         </button>
       </div>
     </div>
   );
+};
+
+Guide.propTypes = {
+  videos: PropTypes.array.isRequired,
 };
 
 export default Guide;
