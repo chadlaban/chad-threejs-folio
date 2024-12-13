@@ -25,4 +25,15 @@ const clickableArr = [
   { mesh: "BeautifulMe", color: "#272522" },
 ];
 
-export { createVideoTexture, clickableArr };
+const images = [
+  { id: 4, path: "/images/memories/analyst_team.jpg" },
+  { id: 7, path: "/images/memories/giant_encompass.jpeg" },
+  { id: 8, path: "/images/memories/graduation.jpeg" },
+  { id: 3, path: "/images/memories/prof_serv_1.jpg" },
+  { id: 2, path: "/images/memories/prof_serv_2.jpg" },
+  { id: 1, path: "/images/memories/self_1.jpg" },
+  { id: 5, path: "/images/memories/valaks_analyst.webp" },
+  { id: 6, path: "/images/memories/morning_shift.jpeg" },
+];
+
+export { createVideoTexture, clickableArr, images };
