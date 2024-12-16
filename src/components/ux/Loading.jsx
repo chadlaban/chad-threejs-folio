@@ -11,13 +11,13 @@ export const Loading = forwardRef(({ videoSrc, onVideoEnd, progress }, ref) => {
       <video
         ref={ref}
         src={videoSrc}
-        className="w-[40%] h-[40%] object-cover"
+        className="w-[80%] sm:w-[60%] md:w-[50%] lg:w-[40%] h-auto object-cover"
         loop
         muted
         onEnded={onVideoEnd}
       />
       <div className="flex justify-center items-center relative">
-        <svg className="w-24 h-24">
+        <svg className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
           <circle
             cx="24"
             cy="24"
