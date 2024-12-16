@@ -7,6 +7,7 @@ import { ContactMe } from "../pages/ContactMe";
 import { Hobbies } from "../pages/Hobbies";
 import PropTypes from "prop-types";
 
+// mesh tied to page
 const MESH_COMPONENT_MAP = {
   Screen001: AboutMe,
   CpuTower: Projects,
