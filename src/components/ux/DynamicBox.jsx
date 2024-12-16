@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { clickableArr } from "../../utils/QualityOfLife";
+import { selectableObjects } from "../../utils/QualityOfLife";
 import MeshPage from "../../layout/MeshPage";
 
 export const DynamicBox = ({ mesh }) => {
   const [isMounted, setIsMounted] = useState(false);
   const [transitionDelay, setTransitionDelay] = useState(false);
-  const object = clickableArr.find((item) => item.mesh === mesh);
+  const object = selectableObjects.find((item) => item.mesh === mesh);
 
   useEffect(() => {
     setIsMounted(true);

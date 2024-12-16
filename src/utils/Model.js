@@ -4,8 +4,12 @@ import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
-import { addBloomEffect, removeBloomEffect } from "./CustomMesh";
-import { clickableArr, createVideoTexture } from "./QualityOfLife";
+import {
+  addBloomEffect,
+  removeBloomEffect,
+  createVideoTexture,
+} from "./CustomMesh";
+import { selectableObjects } from "./QualityOfLife";
 import videoPlaceholder2 from "../assets/videos/video-playthrough.mp4";
 
 const initializeRenderer = (mountRef) => {
@@ -69,7 +73,7 @@ const addMouseListeners = (camera, model, setSelectedMesh) => {
     if (intersects.length > 0) {
       const clickedObject = intersects[0].object;
 
-      if (clickableArr.find((item) => item.mesh === clickedObject.name)) {
+      if (selectableObjects.find((item) => item.mesh === clickedObject.name)) {
         setSelectedMesh(clickedObject.name);
 
         if (selectedObject !== clickedObject) {
