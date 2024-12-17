@@ -36,6 +36,39 @@ const initializeComposer = (renderer, scene, camera) => {
   return composer;
 };
 
+const moveCamera = (camera, targetObject) => {
+  const targetPosition = new THREE.Vector3();
+  targetObject.getWorldPosition(targetPosition);
+
+  const distance = 9;
+
+  const direction = new THREE.Vector3();
+  camera.getWorldPosition(direction);
+  direction.sub(targetPosition).normalize().multiplyScalar(distance);
+
+  const finalCameraPosition = targetPosition.clone().add(direction);
+
+  const duration = 1; // animation duration in seconds
+  const startPosition = camera.position.clone();
+  let startTime = null;
+
+  const animateCamera = (time) => {
+    if (!startTime) startTime = time;
+
+    const elapsedTime = (time - startTime) / 1000;
+    const progress = Math.min(elapsedTime / duration, 1);
+
+    camera.position.lerpVectors(startPosition, finalCameraPosition, progress);
+
+    // animating until target position
+    if (progress < 1) {
+      requestAnimationFrame(animateCamera);
+    }
+  };
+
+  requestAnimationFrame(animateCamera);
+};
+
 const addMouseListeners = (camera, model, setSelectedMesh) => {
   const raycaster = new THREE.Raycaster();
   const mouse = new THREE.Vector2();
@@ -85,6 +118,9 @@ const addMouseListeners = (camera, model, setSelectedMesh) => {
           selectedObject = null;
           setSelectedMesh(null);
         }
+
+        // camera movement
+        moveCamera(camera, clickedObject);
       }
     }
   });
