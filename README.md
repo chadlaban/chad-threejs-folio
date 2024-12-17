@@ -25,19 +25,11 @@ This project is a modern web application starter built with:
 
 - To start the development server:
   <br />
-  npm run dev
-
-# or
-
-yarn dev
+  npm run dev (or) yarn dev
 <br />
 
 - To build the application for production:
-  npm run build
-
-# or
-
-yarn build
+  npm run build (or) yarn build
 
 ## Usage
 
