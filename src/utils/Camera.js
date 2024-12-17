@@ -13,7 +13,6 @@ class Camera {
     };
 
     this.createPerspectiveCamera();
-    this.createOrthographicCamera();
     this.setOrbitControls();
   }
 
@@ -26,20 +25,6 @@ class Camera {
     );
     this.perspectiveCamera.position.set(12, 8, -12); // Initial camera position
     this.scene.add(this.perspectiveCamera);
-  }
-
-  createOrthographicCamera() {
-    this.orthographicCamera = new THREE.OrthographicCamera(
-      (-this.sizes.aspect * this.sizes.frustrum) / 2,
-      (this.sizes.aspect * this.sizes.frustrum) / 2,
-      this.sizes.frustrum / 2,
-      -this.sizes.frustrum / 2,
-      -50, // Near Clipping Plane
-      50 // Far Clipping Plane
-    );
-    this.orthographicCamera.position.set(0, 5.65, 10);
-    this.orthographicCamera.rotation.x = -Math.PI / 6;
-    this.scene.add(this.orthographicCamera);
   }
 
   setOrbitControls() {
@@ -57,19 +42,16 @@ class Camera {
   }
 
   resize() {
-    // Update perspective camera on resize
-    this.sizes.aspect = window.innerWidth / window.innerHeight;
-    this.perspectiveCamera.aspect = this.sizes.aspect;
-    this.perspectiveCamera.updateProjectionMatrix();
+    window.addEventListener("resize", () => {
+      // Update sizes
+      this.sizes.width = window.innerWidth;
+      this.sizes.height = window.innerHeight;
+      this.sizes.aspect = this.sizes.width / this.sizes.height;
 
-    // Update orthographic camera on resize
-    this.orthographicCamera.left =
-      (-this.sizes.aspect * this.sizes.frustrum) / 2;
-    this.orthographicCamera.right =
-      (this.sizes.aspect * this.sizes.frustrum) / 2;
-    this.orthographicCamera.top = this.sizes.frustrum / 2;
-    this.orthographicCamera.bottom = -this.sizes.frustrum / 2;
-    this.orthographicCamera.updateProjectionMatrix();
+      // Update camera aspect ratio and projection matrix
+      this.perspectiveCamera.aspect = this.sizes.aspect;
+      this.perspectiveCamera.updateProjectionMatrix();
+    });
   }
 
   update() {
