@@ -15,16 +15,16 @@ import Light from "./utils/Light";
 import { createGradientBackground } from "./components/world/Background";
 import { Loading } from "./components/ux/Loading";
 import { DynamicBox } from "./components/ux/DynamicBox";
+import { ReactLayer } from "./components/ui/ReactLayer";
 import Popover from "./components/ui/Popover";
-import { Introduction } from "./components/ui/Introduction";
 import videoPlaceholder1 from "./assets/videos/name-loading-static.mp4";
 
 // TODO
-// 1. Pages and contents using JSON data !80%
-// 2. Details transitions and animations !60%
-// 3. Responsiveness throughout all devices !30%
-// 4. Blender animation (see tutorial)
-// 5. Optimize and tests
+// 1. Pages and contents using JSON data !DONE
+// 2. Details transitions and animations !DONE
+// 3. Responsiveness throughout all devices !DONE
+// 4. Blender animation !DONE
+// 5. Optimize and tests !in progress
 // 6. Deploy using free hosting (Vercel?)
 
 const App = () => {
@@ -35,6 +35,7 @@ const App = () => {
   const [selectedMesh, setSelectedMesh] = useState(null);
   const [progress, setProgress] = useState("");
   const mountRef = useRef(null);
+  const mixerRef = useRef(null);
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -44,7 +45,7 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    // Three Scene
+    // Three Scene Setup
     const scene = new THREE.Scene();
     createGradientBackground(scene);
     const renderer = initializeRenderer(mountRef);
@@ -53,17 +54,19 @@ const App = () => {
     initializeComposer(renderer, scene, cameraSetup.perspectiveCamera);
 
     loadModel(
-      "/models/3rd-portfolio.glb",
+      "/models/ChadLaban_ThreeFolio.glb",
       (gltf) => {
-        const model = processModel(gltf.scene);
+        const { model, mixer } = processModel(gltf); // mixer - animation
         scene.add(model);
+
+        mixerRef.current = mixer; // reference for animation control
 
         addMouseListeners(
           cameraSetup.perspectiveCamera,
           model,
           setSelectedMesh
         );
-        startAnimationLoop(light, cameraSetup, renderer, scene);
+        startAnimationLoop(light, cameraSetup, renderer, scene, mixer);
 
         setLoading(false);
       },
@@ -77,20 +80,28 @@ const App = () => {
       }
     );
 
-    // responsive model
+    // resizing of the window
     const handleResize = resizeHandler(renderer, cameraSetup.perspectiveCamera);
     window.addEventListener("resize", handleResize);
 
-    // ref value copy
     const mountNode = mountRef.current;
-
-    // cleanup on unmount
     return () => {
       scene.clear();
       if (mountNode) mountNode.removeChild(renderer.domElement);
       renderer.dispose();
       window.removeEventListener("resize", handleResize);
     };
+  }, []);
+
+  // update animation on each frame
+  useEffect(() => {
+    const animate = () => {
+      if (mixerRef.current) {
+        mixerRef.current.update(0.016); // update the animation mixer at 60 fps
+      }
+      requestAnimationFrame(animate);
+    };
+    animate();
   }, []);
 
   const handleVideoEnd = () => {
@@ -122,7 +133,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen flex text-customGray">
+    <div className="absolute w-full h-screen flex text-customGray">
       <div>
         {isLoading && (
           <Loading
@@ -140,28 +151,18 @@ const App = () => {
               ? "opacity-100 scale-100 transition-all duration-1000 ease-in-out"
               : ""
           }`}
-        ></div>
+        >
+          {/* intro */}
+          <ReactLayer zoomLevel={zoomLevel} mesh={selectedMesh} />
+          {/* pop-up instruction */}
+          <div className="relative">
+            <Popover />
+          </div>
+        </div>
 
         {/* pages as dynamic component */}
         {selectedMesh && <DynamicBox mesh={selectedMesh} />}
       </div>
-
-      {zoomLevel && !isLoading <= 1.6999 && (
-        <>
-          {/* intro */}
-          <Introduction zoomLevel={zoomLevel} />
-          {/* instructions */}
-          <div
-            className={`absolute top-0 right-0 m-2 p-2 flex items-center mb-[700px] transition-transform duration-1000 ease-in-out ${
-              isLoading === !isLoading
-                ? "-translate-y-20 opacity-0"
-                : "-translate-y-0 opacity-100"
-            }`}
-          >
-            <Popover />
-          </div>
-        </>
-      )}
     </div>
   );
 };
