@@ -12,15 +12,14 @@ class Light {
 
   createAmbientLight() {
     // Ambient light (global)
-    this.ambientLight = new THREE.AmbientLight(0xffeadb, 3); // Color and intensity
+    this.ambientLight = new THREE.AmbientLight(0xffeadb, 3); // color, intensity
     this.scene.add(this.ambientLight);
   }
 
   createDirectionalLight() {
-    // Directional light
     this.directionalLight = new THREE.DirectionalLight(0xefefdc, 2);
-    this.directionalLight.position.set(6, 4, 3); // Position the light source
-    this.directionalLight.castShadow = true; // Enable shadows
+    this.directionalLight.position.set(6, 4, 3);
+    this.directionalLight.castShadow = true;
 
     // shadow settings
     this.directionalLight.shadow.bias = -0.002;
@@ -33,17 +32,23 @@ class Light {
   }
 
   createPointLight() {
-    // PointLight for upper wall lighting
-    this.upperPointLight = new THREE.PointLight(0x8174a0, 0.8, 0); // Color, intensity, distance
-    this.upperPointLight.position.set(0, 0.6, 1.5); // Position the point light
-    this.upperPointLight.castShadow = true; // Enable shadows for the point light
+    const isMobile = () => window.matchMedia("(max-width: 640px)").matches;
+
+    // PointLight for upper-middle wall lighting
+    this.upperPointLight = new THREE.PointLight(0x8174a0, 1.5, 0); // color, intensity, distance
+    isMobile()
+      ? this.upperPointLight.position.set(-0.4, 0.8, 1.5)
+      : this.upperPointLight.position.set(-1, 0.2, 1.5);
+    this.upperPointLight.castShadow = true;
     this.upperPointLight.shadow.bias = -0.002;
-    this.upperPointLight.shadow.mapSize.width = 2048; // Shadow resolution
+    this.upperPointLight.shadow.mapSize.width = 2048; // shadow resolution
     this.upperPointLight.shadow.mapSize.height = 2048;
 
-    // PointLight2 for left wall lighting
-    this.leftPointLight = new THREE.PointLight(0x8174a0, 0.4, 0);
-    this.leftPointLight.position.set(-0.65, 0, 1.5);
+    // PointLight for lower-left wall lighting
+    this.leftPointLight = new THREE.PointLight(0x8174a0, 1, 0);
+    isMobile()
+      ? this.leftPointLight.position.set(-1, 0.2, 1.5)
+      : this.leftPointLight.position.set(-2, -0.4, 1.5);
     this.leftPointLight.castShadow = true;
     this.leftPointLight.shadow.bias = -0.002;
     this.leftPointLight.shadow.mapSize.width = 2048;
@@ -54,8 +59,7 @@ class Light {
   }
 
   update() {
-    // Optional update logic for animated lights
-    this.upperPointLight.position.x = Math.sin(Date.now() * 0.001) * 0.3; // animate left to right
+    // for light movements and etc.
   }
 }
 

@@ -40,7 +40,7 @@ const moveCamera = (camera, targetObject) => {
   const targetPosition = new THREE.Vector3();
   targetObject.getWorldPosition(targetPosition);
 
-  const distance = 9;
+  const distance = 10;
 
   const direction = new THREE.Vector3();
   camera.getWorldPosition(direction);
@@ -76,6 +76,8 @@ const addMouseListeners = (camera, model, setSelectedMesh) => {
   let isDragging = false;
   let startX = 0;
   let startY = 0;
+
+  const isMobile = () => window.matchMedia("(max-width: 640px)").matches;
 
   window.addEventListener("mousedown", (event) => {
     startX = event.clientX;
@@ -119,17 +121,43 @@ const addMouseListeners = (camera, model, setSelectedMesh) => {
           setSelectedMesh(null);
         }
 
-        // camera movement
-        moveCamera(camera, clickedObject);
+        // camera movement only occurs for larger resolution
+        if (!isMobile()) {
+          moveCamera(camera, clickedObject);
+        }
       }
     }
   });
 };
 
-const processModel = (model) => {
+const clock = new THREE.Clock(); // tracking time
+
+const processModel = (gltf) => {
+  const model = gltf.scene;
+  const animations = gltf.animations; // animations from GLTF
+
+  const mixer = new THREE.AnimationMixer(model);
+
+  // play all of them once
+  if (animations && animations.length) {
+    animations.forEach((animation) => {
+      const action = mixer.clipAction(animation);
+      action.setLoop(THREE.LoopOnce); // plays only once
+      action.play();
+      action.clampWhenFinished = true;
+    });
+  }
+
+  // process the model
   const box = new THREE.Box3().setFromObject(model);
   const center = box.getCenter(new THREE.Vector3());
-  // video texture
+
+  const isMobile = () => window.matchMedia("(max-width: 640px)").matches;
+
+  isMobile()
+    ? model.position.set(-center.x - 1.5, -center.y + 1.6, -center.z - 1)
+    : model.position.set(-center.x - 2.5, -center.y + 1, -center.z - 1);
+
   const videoTexture2 = createVideoTexture(videoPlaceholder2);
   model.position.sub(center);
 
@@ -141,7 +169,7 @@ const processModel = (model) => {
       child.castShadow = true;
       child.receiveShadow = true;
 
-      if (child.name === "MirrorCase001") {
+      if (child.name === "Cube100_1") {
         child.material = new THREE.MeshPhysicalMaterial({
           roughness: 0,
           color: 0xffffff,
@@ -150,7 +178,7 @@ const processModel = (model) => {
         });
       }
 
-      if (child.name === "Screen002") {
+      if (child.name === "Cube037_5") {
         child.material = new THREE.MeshBasicMaterial({
           map: videoTexture2,
         });
@@ -158,15 +186,21 @@ const processModel = (model) => {
     }
   });
 
-  return model;
+  return { model, mixer };
 };
 
-const startAnimationLoop = (light, cameraSetup, renderer, scene) => {
+const startAnimationLoop = (light, cameraSetup, renderer, scene, mixer) => {
   const animate = () => {
     requestAnimationFrame(animate);
     light.update();
     cameraSetup.update();
     renderer.render(scene, cameraSetup.perspectiveCamera);
+
+    // progress animations
+    const deltaTime = clock.getDelta(); // time between last and current frame
+    if (mixer) {
+      mixer.update(deltaTime);
+    }
   };
   animate();
 };

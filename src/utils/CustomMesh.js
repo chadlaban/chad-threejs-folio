@@ -11,8 +11,8 @@ const addBloomEffect = (object) => {
 };
 
 const removeBloomEffect = (object) => {
-  object.material.emissive.set(0); // reset emissive color
-  object.material.emissiveIntensity = 0; // reset emissive intensity
+  object.material.emissive.set(0);
+  object.material.emissiveIntensity = 0;
 };
 
 // convert the color to a hexadecimal string

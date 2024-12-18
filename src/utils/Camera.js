@@ -19,18 +19,18 @@ class Camera {
   createPerspectiveCamera() {
     this.perspectiveCamera = new THREE.PerspectiveCamera(
       28, // FOV
-      this.sizes.aspect, // Aspect Ratio
-      0.1, // Near Clipping Plane
-      1000 // Far Clipping Plane
+      this.sizes.aspect,
+      0.1, // clipping when near
+      1000 // clipping when far
     );
-    this.perspectiveCamera.position.set(12, 8, -12); // Initial camera position
+    this.perspectiveCamera.position.set(12, 8, -12); // initial camera position
     this.scene.add(this.perspectiveCamera);
   }
 
   setOrbitControls() {
     this.controls = new OrbitControls(this.perspectiveCamera, this.canvas);
-    this.controls.enableDamping = true; // Smooth movement
-    this.controls.enableZoom = true; // Enable zooming
+    this.controls.enableDamping = true;
+    this.controls.enableZoom = true;
 
     // limit control - vertically and by rotation
     this.controls.maxPolarAngle = Math.PI / 2;
