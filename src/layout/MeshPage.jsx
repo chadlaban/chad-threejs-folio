@@ -9,11 +9,11 @@ import PropTypes from "prop-types";
 
 // mesh tied to page
 const MESH_COMPONENT_MAP = {
-  Screen001: AboutMe,
-  CpuTower: Projects,
-  OfficeChair: Employment,
-  MirrorCase001: Certifications,
-  BeautifulMe: Gallery,
+  Cube016_4: AboutMe,
+  "Screenshot_2024-12-03_010419_2": Projects,
+  Cube054: Employment,
+  Cube100_1: Certifications,
+  Cube112_1: Gallery,
   LargeBeanBag: ContactMe,
   Vase: Hobbies,
 };
