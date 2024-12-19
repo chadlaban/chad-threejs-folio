@@ -1,12 +1,12 @@
 const images = [
   { id: 3, path: "/media/memories/picture_3.jpg" },
-  { id: 6, path: "/media/memories/picture_6.jpeg" },
-  { id: 2, path: "/media/memories/picture_2.jpg" },
+  { id: 6, path: "/media/memories/picture_6.jpg" },
+  { id: 2, path: "/media/memories/picture_2.jpeg" },
   { id: 1, path: "/media/memories/picture_1.jpg" },
-  { id: 4, path: "/media/memories/picture_4.webp" },
-  { id: 5, path: "/media/memories/picture_5.jpeg" },
+  { id: 4, path: "/media/memories/picture_4.jpeg" },
+  { id: 5, path: "/media/memories/picture_5.jpg" },
   { id: 7, path: "/media/memories/picture_7.jpg" },
-  { id: 8, path: "/media/memories/picture_8.jpg" },
+  { id: 8, path: "/media/memories/picture_8.webp" },
 ];
 
 const hobbiesMedia = [
@@ -108,12 +108,15 @@ const selectableObjects = [
 ];
 
 const aboutMeParaLines = [
-  "Hello! I'm Chad Laban, a passionate Software Developer with a love for crafting subtle but impactful user experiences.",
-  "In my recent role at 株式会社 ゴールドバリュークリエーション (Golden Value Creation), I worked on the Okimeguri project, handling both frontend and backend development tasks. I honed my skills in code implementation, debugging, and collaboration with fellow developers.",
-  "Previously, at Capella BPO, I worked on client-side web applications using modern frameworks and created a test server for endpoint creation. Before that, at Giant International Software Station Inc., I handled feature requests and dashboard customizations, further diversifying my skill set.",
-  "I value the camaraderie and support from my colleagues, which made every day an opportunity for growth and collaboration. My experience as a Software Analyst at Giant International Software Station enhanced my vocal confidence through customer support and reignited my passion for software development.",
-  "I love learning from people and strive for quality outputs in my work. I enjoy working with teams and learning from them. Outside work, I play FPS and single-player games, cook meals, jog occasionally, and am starting a new hobby of reading books.",
-  "I look forward to connecting with fellow professionals, sharing insights, and exploring opportunities to collaborate and learn. Feel free to reach out—I'm always up for a good tech discussion or a new project venture. Let's connect!",
+  "I started my first tech career as a Software Analyst, I never really saw myself as a Software Developer or a Software Engineer back then...",
+  "I was thinking that my code would be messy at that time. A few months in the company, there were internal software developers that reached out and...",
+  "encouraged me to apply and try out as a Software Developer, they told me that everyone has potential and it would be a waste not to try. I was a bit skeptical...",
+  "but went ahead and applied, I failed in my first try. Even after that they still encouraged me to apply for the next one. On my second try, I got in...",
+  "I honestly struggled during the first weeks, but I was able to catch up and on the following months...",
+  "I started to implement internal projects that were under my ownership, I then realized that I like what I'm doing and how interesting it is...",
+  "I'll always remember my seniors and coworkers that contributed to my growth, they made a such an impact of who I am now in my professional career...",
+  "I'm now working in the software industry for 3 years, and I'm still learning and understanding something new along the way...",
+  "I look forward to connecting and explore opportunities to collaborate and learn. Feel free to reach out — Let's connect!",
 ];
 
 export { images, hobbiesMedia, aboutMeParaLines, selectableObjects };
