@@ -4,56 +4,268 @@
     "association": "株式会社 ゴールドバリュークリエーション (Golden Value Creation)",
     "association_link": "https://gvc.co.jp/",
     "description": "“Okimeguri” is a website created with the hope that you will enjoy a journey in Okinawa that can only be experienced there, more comfortably and deeply, and that you will leisurely and relaxingly tour various places within the limited time. The “Tourism Comfort Map” introduces comfortable spots and popular spots up to two months in advance. When you have free time or are unsure of your destination, please take a look at the “Tourism Guide Map,” “Story Map,” and “Event Information,” and you will surely discover a new side of Okinawa. We hope you will find it useful when planning your trip at home or during your trip when you have some free time. Additionally, the Okinawa tourism information website “Okinawa Monogatari” also shares various attractions of Okinawa, so please take a look at it as well.",
-    "tech_stack": [
-      "Vue.js",
-      "Nuxt.js",
-      "REST API",
-      "Node.js",
-      "Express.js",
-      "Sequelize ORM",
-      "AWS S3"
-    ],
-    "tools": ["Postman", "Docker", "Adobe XD", "RedMine", "ChatWork"]
+    "stack": [
+      {
+        "id": 1,
+        "tech": "HTML",
+        "src_path": "https://img.shields.io/badge/-HTML-FF5722?style=plastic&logo=html5&logoColor=white"
+      },
+      {
+        "id": 2,
+        "tech": "CSS",
+        "src_path": "https://img.shields.io/badge/-CSS-1572B6?style=plastic&logo=css3&logoColor=white"
+      },
+      {
+        "id": 3,
+        "tech": "Tailwind CSS",
+        "src_path": "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=plastic&logo=tailwind-css&logoColor=white"
+      },
+      {
+        "id": 4,
+        "tech": "TypeScript",
+        "src_path": "https://img.shields.io/badge/-TypeScript-3178C6?style=plastic&logo=typescript&logoColor=white"
+      },
+      {
+        "id": 5,
+        "tech": "Vue.js",
+        "src_path": "https://img.shields.io/badge/-Vue.js-4FC08D?style=plastic&logo=vue.js&logoColor=white"
+      },
+      {
+        "id": 6,
+        "tech": "Nuxt.js",
+        "src_path": "https://img.shields.io/badge/-Nuxt.js-00C58E?style=plastic&logo=nuxt.js&logoColor=white"
+      },
+      {
+        "id": 7,
+        "tech": "React.js",
+        "src_path": "https://img.shields.io/badge/-React-61DAFB?style=plastic&logo=react&logoColor=black"
+      },
+      {
+        "id": 8,
+        "tech": "Node.js",
+        "src_path": "https://img.shields.io/badge/-Node.js-339933?style=plastic&logo=node.js&logoColor=white"
+      },
+      {
+        "id": 9,
+        "tech": "Express.js",
+        "src_path": "https://img.shields.io/badge/-Express.js-000000?style=plastic&logo=express&logoColor=white"
+      },
+      {
+        "id": 10,
+        "tech": "Sequelize ORM",
+        "src_path": "https://img.shields.io/badge/-Sequelize-52B0E7?style=plastic&logo=sequelize&logoColor=white"
+      },
+      {
+        "id": 11,
+        "tech": "MariaDB",
+        "src_path": "https://img.shields.io/badge/-MariaDB-003545?style=plastic&logo=mariadb&logoColor=white"
+      },
+      {
+        "id": 12,
+        "tech": "S3 Bucket",
+        "src_path": "https://img.shields.io/badge/-Amazon_S3-569A31?style=plastic&logo=amazon-s3&logoColor=white"
+      },
+      {
+        "id": 13,
+        "tech": "Docker",
+        "src_path": "https://img.shields.io/badge/-Docker-2496ED?style=plastic&logo=docker&logoColor=white"
+      }
+    ]
   },
   {
     "project_title": "Watch It",
     "association": "Personal Project",
     "association_link": "https://github.com/chadlaban/watch-it",
     "description": "A website that provides details, reviews, and other information about films. Users can browse for specific movies and access important information.",
-    "tech_stack": ["HTML", "CSS", "React.js", "REST API"],
-    "tools": ["Figma", "Git"]
+    "stack": [
+      {
+        "id": 1,
+        "tech": "HTML",
+        "src_path": "https://img.shields.io/badge/-HTML-FF5722?style=plastic&logo=html5&logoColor=white"
+      },
+      {
+        "id": 2,
+        "tech": "CSS",
+        "src_path": "https://img.shields.io/badge/-CSS-1572B6?style=plastic&logo=css3&logoColor=white"
+      },
+      {
+        "id": 3,
+        "tech": "Tailwind CSS",
+        "src_path": "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=plastic&logo=tailwind-css&logoColor=white"
+      },
+      {
+        "id": 4,
+        "tech": "JavaScript",
+        "src_path": "https://img.shields.io/badge/-JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black"
+      },
+      {
+        "id": 5,
+        "tech": "React.js",
+        "src_path": "https://img.shields.io/badge/-React-61DAFB?style=plastic&logo=react&logoColor=black"
+      },
+      {
+        "id": 6,
+        "tech": "Node.js",
+        "src_path": "https://img.shields.io/badge/-Node.js-339933?style=plastic&logo=node.js&logoColor=white"
+      },
+      {
+        "id": 7,
+        "tech": "Express.js",
+        "src_path": "https://img.shields.io/badge/-Express.js-000000?style=plastic&logo=express&logoColor=white"
+      },
+      {
+        "id": 8,
+        "tech": "REST API",
+        "src_path": "https://img.shields.io/badge/JSON-000?logo=json&logoColor=white)"
+      }
+    ]
   },
   {
     "project_title": "Little Lemon",
     "association": "Coursera | Meta Front End Developer",
     "association_link": "https://github.com/chadlaban/little-lemon-frontend",
     "description": "A straightforward React.js project from a Meta course, showcasing essential knowledge and best practices for using React effectively.",
-    "tech_stack": ["HTML", "CSS", "React.js"],
-    "tools": ["Figma", "Git"]
+    "stack": [
+      {
+        "id": 1,
+        "tech": "HTML",
+        "src_path": "https://img.shields.io/badge/-HTML-FF5722?style=plastic&logo=html5&logoColor=white"
+      },
+      {
+        "id": 2,
+        "tech": "CSS",
+        "src_path": "https://img.shields.io/badge/-CSS-1572B6?style=plastic&logo=css3&logoColor=white"
+      },
+      {
+        "id": 3,
+        "tech": "JavaScript",
+        "src_path": "https://img.shields.io/badge/-JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black"
+      },
+      {
+        "id": 4,
+        "tech": "React.js",
+        "src_path": "https://img.shields.io/badge/-React-61DAFB?style=plastic&logo=react&logoColor=black"
+      }
+    ]
   },
   {
     "project_title": "LabelForce AI",
     "association": "Capella BPO",
     "association_link": "https://www.capellabpo.com/",
     "description": "Labelforce AI provides comprehensive data labeling services, creating and managing custom annotation teams. They offer tailored solutions by recruiting the right talent from their global network, ensuring alignment with project goals. Labelforce AI handles all aspects of team management, allowing clients to focus on advancing their AI systems while ensuring data accuracy and efficiency, thus enhancing their competitive edge.",
-    "tech_stack": ["Vue.js", "Nuxt.js", "Node.js", "Express.js", "PostgreSQL"],
-    "tools": ["Postman", "Figma", "BaseCamp", "Git"]
+    "stack": [
+      {
+        "id": 1,
+        "tech": "HTML",
+        "src_path": "https://img.shields.io/badge/-HTML-FF5722?style=plastic&logo=html5&logoColor=white"
+      },
+      {
+        "id": 2,
+        "tech": "CSS",
+        "src_path": "https://img.shields.io/badge/-CSS-1572B6?style=plastic&logo=css3&logoColor=white"
+      },
+      {
+        "id": 3,
+        "tech": "Vue.js",
+        "src_path": "https://img.shields.io/badge/-Vue.js-4FC08D?style=plastic&logo=vue.js&logoColor=white"
+      },
+      {
+        "id": 4,
+        "tech": "Tailwind CSS",
+        "src_path": "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=plastic&logo=tailwind-css&logoColor=white"
+      },
+      {
+        "id": 5,
+        "tech": "Node.js",
+        "src_path": "https://img.shields.io/badge/-Node.js-339933?style=plastic&logo=node.js&logoColor=white"
+      },
+      {
+        "id": 6,
+        "tech": "Express.js",
+        "src_path": "https://img.shields.io/badge/-Express.js-000000?style=plastic&logo=express&logoColor=white"
+      },
+      {
+        "id": 7,
+        "tech": "PostgreSQL",
+        "src_path": "https://img.shields.io/badge/-PostgreSQL-336791?style=plastic&logo=postgresql&logoColor=white"
+      }
+    ]
   },
   {
     "project_title": "AI SearchBox",
     "association": "Capella BPO",
     "association_link": "https://www.capellabpo.com/",
     "description": "I collaborated with a UI/UX designer in the Philippines to create the front-end code for their Figma design. The project allows users to quickly search for AI tools based on their needs. Users can filter AI tools by keyword, category through a checkbox filter, and by selecting the pill category on each AI Tool card, which automatically filters the default output.",
-    "tech_stack": ["Vue.js", "Nuxt.js", "Node.js", "Express.js", "PostgreSQL"],
-    "tools": ["Postman", "Figma", "BaseCamp", "Git"]
+    "stack": [
+      {
+        "id": 1,
+        "tech": "HTML",
+        "src_path": "https://img.shields.io/badge/-HTML-FF5722?style=plastic&logo=html5&logoColor=white"
+      },
+      {
+        "id": 2,
+        "tech": "CSS",
+        "src_path": "https://img.shields.io/badge/-CSS-1572B6?style=plastic&logo=css3&logoColor=white"
+      },
+      {
+        "id": 3,
+        "tech": "Vue.js",
+        "src_path": "https://img.shields.io/badge/-Vue.js-4FC08D?style=plastic&logo=vue.js&logoColor=white"
+      },
+      {
+        "id": 4,
+        "tech": "Bootstrap",
+        "src_path": "https://img.shields.io/badge/-Bootstrap-7952B3?style=plastic&logo=bootstrap&logoColor=white"
+      },
+      {
+        "id": 5,
+        "tech": "Node.js",
+        "src_path": "https://img.shields.io/badge/-Node.js-339933?style=plastic&logo=node.js&logoColor=white"
+      },
+      {
+        "id": 6,
+        "tech": "Express.js",
+        "src_path": "https://img.shields.io/badge/-Express.js-000000?style=plastic&logo=express&logoColor=white"
+      },
+      {
+        "id": 7,
+        "tech": "PostgreSQL",
+        "src_path": "https://img.shields.io/badge/-PostgreSQL-336791?style=plastic&logo=postgresql&logoColor=white"
+      }
+    ]
   },
   {
     "project_title": "Kape-An",
     "association": "Personal Project",
     "association_link": "https://github.com/chadlaban/kape-an-landing-page",
     "description": "This coffee shop concept, inspired by the charm of Baguio City, PH, showcases the products available for sale. Users can explore a variety of offerings, from freshly brewed coffee to delectable pastries, all presented in an inviting and user-friendly interface and responsive throughout devices.",
-    "tech_stack": ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
-    "tools": ["Figma", "Adobe Photoshop", "Git"]
+    "stack": [
+      {
+        "id": 1,
+        "tech": "HTML",
+        "src_path": "https://img.shields.io/badge/-HTML-FF5722?style=plastic&logo=html5&logoColor=white"
+      },
+      {
+        "id": 2,
+        "tech": "CSS",
+        "src_path": "https://img.shields.io/badge/-CSS-1572B6?style=plastic&logo=css3&logoColor=white"
+      },
+      {
+        "id": 3,
+        "tech": "Tailwind CSS",
+        "src_path": "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=plastic&logo=tailwind-css&logoColor=white"
+      },
+      {
+        "id": 4,
+        "tech": "JavaScript",
+        "src_path": "https://img.shields.io/badge/-JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black"
+      },
+      {
+        "id": 5,
+        "tech": "React.js",
+        "src_path": "https://img.shields.io/badge/-React-61DAFB?style=plastic&logo=react&logoColor=black"
+      }
+    ]
   },
   {
     "project_title": "Asset Request Dashboard",
@@ -62,8 +274,43 @@
     "association": "Giant International Software Station Inc. (Encompass Technologies)",
     "association_link": "https://www.linkedin.com/company/giant-international-software-station-inc",
     "description": "I created a dashboard for our inventory asset manager to track and receive asset requests from employees within the ERP system. The dashboard allows users to request up to 5 hardware assets and requires a valid reason for each request. It filters asset data to match specifics for our location and sends requests to the asset manager for approval. The dashboard includes multiple views based on user roles and maintains a history of all asset requests. It is responsive and can be used on smaller devices.",
-    "tech_stack": ["HTML", "CSS", "SASS", "JavaScript", "REST API"],
-    "tools": ["Postman", "WebHook", "Mocha", "Chai"]
+    "stack": [
+      {
+        "id": 1,
+        "tech": "HTML",
+        "src_path": "https://img.shields.io/badge/-HTML-FF5722?style=plastic&logo=html5&logoColor=white"
+      },
+      {
+        "id": 2,
+        "tech": "CSS",
+        "src_path": "https://img.shields.io/badge/-CSS-1572B6?style=plastic&logo=css3&logoColor=white"
+      },
+      {
+        "id": 3,
+        "tech": "SASS",
+        "src_path": "https://img.shields.io/badge/-SASS-CC6699?style=plastic&logo=sass&logoColor=white"
+      },
+      {
+        "id": 4,
+        "tech": "JavaScript",
+        "src_path": "https://img.shields.io/badge/-JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black"
+      },
+      {
+        "id": 5,
+        "tech": "Mocha",
+        "src_path": "https://img.shields.io/badge/-Mocha-8D6748?style=plastic&logo=mocha&logoColor=white"
+      },
+      {
+        "id": 6,
+        "tech": "REST API",
+        "src_path": "https://img.shields.io/badge/JSON-000?logo=json&logoColor=white)"
+      },
+      {
+        "id": 7,
+        "tech": "Snowflake",
+        "src_path": "https://img.shields.io/badge/-Snowflake-336791?style=plastic&logo=snowflake&logoColor=white"
+      }
+    ]
   },
   {
     "project_title": "Developer Knowledge Dashboard",
@@ -72,8 +319,43 @@
     "association": "Giant International Software Station Inc. (Encompass Technologies)",
     "association_link": "https://www.linkedin.com/company/giant-international-software-station-inc",
     "description": "This knowledge dashboard is designed for internal developers, offering knowledge and code snippets for ongoing projects. It features topic categories divided into four columns, each with topic cards displaying a short description. Clicking on a card reveals a step-by-step process in an iFrame. The dashboard can be filtered by category or keywords.",
-    "tech_stack": ["HTML", "CSS", "SASS", "JavaScript", "REST API"],
-    "tools": ["Postman", "WebHook", "Mocha", "Chai"]
+    "stack": [
+      {
+        "id": 1,
+        "tech": "HTML",
+        "src_path": "https://img.shields.io/badge/-HTML-FF5722?style=plastic&logo=html5&logoColor=white"
+      },
+      {
+        "id": 2,
+        "tech": "CSS",
+        "src_path": "https://img.shields.io/badge/-CSS-1572B6?style=plastic&logo=css3&logoColor=white"
+      },
+      {
+        "id": 3,
+        "tech": "SASS",
+        "src_path": "https://img.shields.io/badge/-SASS-CC6699?style=plastic&logo=sass&logoColor=white"
+      },
+      {
+        "id": 4,
+        "tech": "JavaScript",
+        "src_path": "https://img.shields.io/badge/-JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black"
+      },
+      {
+        "id": 5,
+        "tech": "Mocha",
+        "src_path": "https://img.shields.io/badge/-Mocha-8D6748?style=plastic&logo=mocha&logoColor=white"
+      },
+      {
+        "id": 6,
+        "tech": "REST API",
+        "src_path": "https://img.shields.io/badge/JSON-000?logo=json&logoColor=white)"
+      },
+      {
+        "id": 7,
+        "tech": "Snowflake",
+        "src_path": "https://img.shields.io/badge/-Snowflake-336791?style=plastic&logo=snowflake&logoColor=white"
+      }
+    ]
   },
   {
     "project_title": "EDI KPI Dashboard",
@@ -82,7 +364,42 @@
     "association": "Giant International Software Station Inc. (Encompass Technologies)",
     "association_link": "https://www.linkedin.com/company/giant-international-software-station-inc",
     "description": "I updated the KPI dashboard for our EDI team, collaborating with their team lead to determine the necessary statistics and desired layout. The dashboard allows employees to filter KPIs by month and year, and includes summary cards with task details. It is dynamic and responsive, automatically adjusting for new or inactive team members.",
-    "tech_stack": ["HTML", "CSS", "SASS", "JavaScript", "REST API"],
-    "tools": ["Postman", "WebHook", "Mocha", "Chai"]
+    "stack": [
+      {
+        "id": 1,
+        "tech": "HTML",
+        "src_path": "https://img.shields.io/badge/-HTML-FF5722?style=plastic&logo=html5&logoColor=white"
+      },
+      {
+        "id": 2,
+        "tech": "CSS",
+        "src_path": "https://img.shields.io/badge/-CSS-1572B6?style=plastic&logo=css3&logoColor=white"
+      },
+      {
+        "id": 3,
+        "tech": "SASS",
+        "src_path": "https://img.shields.io/badge/-SASS-CC6699?style=plastic&logo=sass&logoColor=white"
+      },
+      {
+        "id": 4,
+        "tech": "JavaScript",
+        "src_path": "https://img.shields.io/badge/-JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black"
+      },
+      {
+        "id": 5,
+        "tech": "Mocha",
+        "src_path": "https://img.shields.io/badge/-Mocha-8D6748?style=plastic&logo=mocha&logoColor=white"
+      },
+      {
+        "id": 6,
+        "tech": "REST API",
+        "src_path": "https://img.shields.io/badge/JSON-000?logo=json&logoColor=white)"
+      },
+      {
+        "id": 7,
+        "tech": "Snowflake",
+        "src_path": "https://img.shields.io/badge/-Snowflake-336791?style=plastic&logo=snowflake&logoColor=white"
+      }
+    ]
   }
 ]
