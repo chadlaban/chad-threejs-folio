@@ -97,24 +97,24 @@ const selectableObjects = [
     color: "#412728",
     textColor: "#FAFAFA",
   },
-  {
-    id: 7,
-    title: "Contact Me",
-    path: "/media/selectables/BeanBag.jpg",
-    mesh: "LargeBeanBag",
-    color: "#9B5C44",
-    textColor: "#1D1D1D",
-  },
+  // {
+  //   id: 7,
+  //   title: "Contact Me",
+  //   path: "/media/selectables/BeanBag.jpg",
+  //   mesh: "LargeBeanBag",
+  //   color: "#9B5C44",
+  //   textColor: "#1D1D1D",
+  // },
 ];
 
 const aboutMeParaLines = [
   "I started my first tech career as a Software Analyst, I never really saw myself as a Software Developer or a Software Engineer back then...",
-  "I was thinking that my code would be messy at that time. A few months in the company, there were internal software developers that reached out and...",
-  "encouraged me to apply and try out as a Software Developer, they told me that everyone has potential and it would be a waste not to try. I was a bit skeptical...",
-  "but went ahead and applied, I failed in my first try. Even after that they still encouraged me to apply for the next one. On my second try, I got in...",
+  "I was thinking that my code would be messy if ever I'm a Dev at that time. A few months in the company, there were internal software developers that reached out and...",
+  "encouraged me to apply and try out as a Software Developer, they told me that everyone has potential and it would be a waste not to try. I was doubtful of myself...",
+  "but still went ahead and applied, I failed on my first try. Even after that they still encouraged me to apply for the next one. On my second try, I got in...",
   "I honestly struggled during the first weeks, but I was able to catch up and on the following months...",
-  "I started to implement internal projects that were under my ownership, I then realized that I like what I'm doing and how interesting it is...",
-  "I'll always remember my seniors and coworkers that contributed to my growth, they made a such an impact of who I am now in my professional career...",
+  "I was able to implement internal projects that were under my ownership, I then realized that I like what I'm doing and how interesting it is...",
+  "I'll always remember my seniors and coworkers that contributed to my growth, or anyone who made an impact of who I am now in my professional career...",
   "I'm now working in the software industry for 3 years, and I'm still learning and understanding something new along the way...",
   "I look forward to connecting and explore opportunities to collaborate and learn. Feel free to reach out — Let's connect!",
 ];

@@ -40,7 +40,7 @@ const moveCamera = (camera, targetObject) => {
   const targetPosition = new THREE.Vector3();
   targetObject.getWorldPosition(targetPosition);
 
-  const distance = 10;
+  const distance = 12;
 
   const direction = new THREE.Vector3();
   camera.getWorldPosition(direction);
