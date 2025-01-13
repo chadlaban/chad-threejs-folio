@@ -28,8 +28,8 @@ export const ContactMe = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <SlideTransition>
-        <div className="w-[300px] mx-auto p-6 bg-customWhite rounded-lg shadow-lg lg:w-[550px]">
-          <h2 className="font-mt text-4xl font-bold text-center text-customGray mb-6">
+        <div className="w-full max-w-[300px] mx-auto p-6 bg-customWhite rounded-lg shadow-lg lg:max-w-[550px]">
+          <h2 className="font-mt text-2xl md:text-3xl lg:text-4xl font-bold text-center text-customGray mb-6">
             CONTACT ME
           </h2>
 
