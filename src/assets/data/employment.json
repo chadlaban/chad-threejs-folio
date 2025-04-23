@@ -5,7 +5,7 @@
     "company": "株式会社 ゴールドバリュークリエーション (Golden Value Creation)",
     "company_link": "https://gvc.co.jp/",
     "responsibilities": "Coding, maintaining, and testing both client and admin interfaces for clients under the company, a project that I have been able to work with the most is the Okimeguri project (https://okimeguri.com/), this is a project that the Okinawa government (Tourism Department) is using to promote events that are currently being held within the Okinawa prefecture.",
-    "employment_duration": "Oct 2023 - Oct 2024 | 1 year 1 month",
+    "employment_duration": "Oct 2023 - Jan 2025 | 1 year 4 months",
     "stack": [
       {
         "id": 1,
@@ -76,61 +76,6 @@
   },
   {
     "id": 2,
-    "job_title": "Front End Developer",
-    "company": "Capella BPO",
-    "company_link": "https://www.capellabpo.com/",
-    "responsibilities": "A day-to-day summary of what I've worked is that we have to research the best technologies to be implemented and would match their web applications requirements that they have. I was assigned to do research on what are the best frameworks to utilize based on the technical requirements and at the same time code the front-end and build test APIs to show the actual output of each of the web applications.",
-    "employment_duration": "Jun 2023 - Sep 2023 | 4 months",
-    "stack": [
-      {
-        "id": 1,
-        "tech": "HTML",
-        "src_path": "https://img.shields.io/badge/-HTML-FF5722?style=plastic&logo=html5&logoColor=white"
-      },
-      {
-        "id": 2,
-        "tech": "CSS",
-        "src_path": "https://img.shields.io/badge/-CSS-1572B6?style=plastic&logo=css3&logoColor=white"
-      },
-      {
-        "id": 3,
-        "tech": "SASS",
-        "src_path": "https://img.shields.io/badge/-SASS-CC6699?style=plastic&logo=sass&logoColor=white"
-      },
-      {
-        "id": 4,
-        "tech": "Tailwind CSS",
-        "src_path": "https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=plastic&logo=tailwind-css&logoColor=white"
-      },
-      {
-        "id": 5,
-        "tech": "Bootstrap",
-        "src_path": "https://img.shields.io/badge/-Bootstrap-7952B3?style=plastic&logo=bootstrap&logoColor=white"
-      },
-      {
-        "id": 6,
-        "tech": "JavaScript",
-        "src_path": "https://img.shields.io/badge/-JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black"
-      },
-      {
-        "id": 7,
-        "tech": "Node.js",
-        "src_path": "https://img.shields.io/badge/-Node.js-339933?style=plastic&logo=node.js&logoColor=white"
-      },
-      {
-        "id": 8,
-        "tech": "Express.js",
-        "src_path": "https://img.shields.io/badge/-Express.js-000000?style=plastic&logo=express&logoColor=white"
-      },
-      {
-        "id": 9,
-        "tech": "PostgreSQL",
-        "src_path": "https://img.shields.io/badge/-PostgreSQL-336791?style=plastic&logo=postgresql&logoColor=white"
-      }
-    ]
-  },
-  {
-    "id": 3,
     "job_title": "Software Developer",
     "company": "Giant International Software Station Inc. (Encompass Technologies)",
     "company_link": "https://www.linkedin.com/company/giant-international-software-station-inc",
