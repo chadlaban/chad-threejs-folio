@@ -126,7 +126,7 @@ export const ReactLayer = ({ zoomLevel, mesh }) => {
                   ᜃ᜔ᜑᜇ᜔ ᜎᜊᜈ᜔
                 </p>
                 <p className="font-mt pt-2 mt-2 text-sm sm:text-base md:text-lg lg:text-xl">
-                  Software Engineer | Web Developer
+                  Software Engineer | Web Developer | Data Analyst
                 </p>
               </section>
             </div>
