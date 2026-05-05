@@ -33,10 +33,10 @@ export const AboutMe = () => {
       >
         <article className="text-center">
           <p className="font-js text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-            My Dev Journey
+            My Journey So Far
           </p>
           <p className="font-nts text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-            ᜋ᜔ᜌ᜔ ᜇᜒᜊ᜔ ᜑ᜔ᜂᜂᜇ᜔ᜈᜒᜌ᜔
+            ᜀᜅ᜔ ᜀᜃᜒᜅ᜔ ᜃ᜔ᜏᜒᜈ᜔ᜆᜓ ᜐ ᜅᜌᜓᜈ᜔
           </p>
         </article>
       </motion.div>
